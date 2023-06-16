@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+          integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+<div class="app">
+    <header class="header">
+        <div class="grid">
+            <nav class="header__navbar">
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--separate">
+                        Vào cửa hàng trên ứng dụng
+                        <div class="header__qr">
+                            <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                            <div class="header__qr-apps">
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/google.png" alt="Google Play"
+                                         class="header__qr-download-img">
+                                </a>
+                                <a href="" class="header__qr-link">
+                                    <img src="./assets/img/app_store.png" alt="App Store"
+                                         class="header__qr-download-img">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <span class="header__navbar-title--no-pointer">Kết nối</span>
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                        </a>
+
+                        <a href="" class="header__navbar-icon-link">
+                            <i class="header__navbar-icon fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="header__navbar-list">
+                    <li class="header__navbar-item header__navbar-item-has-notify">
+                        <a href="" class="header__navbar-item-link">
+                            <i class=" header__navbar-icon fa-regular fa-bell"></i>
+                            Thông báo
+                        </a>
+                        <div class="header__notify">
+                            <header class="header__notify-header">
+                                <h3>Thông báo mới nhận</h3>
+                            </header>
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://media-asia-cdn.oriflame.com/productImage/?externalMediaId=product-management-media%2F42517%2F42517.png%3Fversion%3D1607435114&w=480&bc=%23f5f5f5&ib=%23f5f5f5&h=480&q=50"
+                                             alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Nước hoa QT chính hãng</span>
+                                            <span class="header__notify-descriotion">Mô tả mỹ phẩm QT chính hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://media-asia-cdn.oriflame.com/productImage/?externalMediaId=product-management-media%2F37214%2F37214.png%3Fversion%3D1607433308&w=480&bc=%23f5f5f5&ib=%23f5f5f5&h=480&q=50"
+                                             alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Nước hoa QT chính hãng</span>
+                                            <span class="header__notify-descriotion">Mô tả mỹ phẩm QT chính hãng</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="header__notify-list">
+                                <li class="header__notify-item header__notify-item--viewed">
+                                    <a href="" class="header__notify-link">
+                                        <img src="https://media-asia-cdn.oriflame.com/productImage/?externalMediaId=product-management-media%2F35653%2F35653.png%3Fversion%3D1607561110&w=480&bc=%23f5f5f5&ib=%23f5f5f5&h=480&q=50"
+                                             alt="" class="header__notify-img">
+                                        <div class="header__notify-info">
+                                            <span class="header__notify-name">Nước hoa QT chính hãng</span>
+                                            <span class="header__notify-descriotion">Giảm tối đa: 100.000 ₫(ĐH tối thiểu: 1.500.000 ₫)</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="header__notify-footer">
+                                <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="header__navbar-item">
+                        <a href="" class="header__navbar-item-link">
+                            <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                            Trợ giúp
+                        </a>
+                    </li>
+                    <div class="">
+                        <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
+                            Đăng ký
+                        </li>
+                    </div>
+
+                    <div class="">
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li>
+                    </div>
+                    <!--                    <li class="header__navbar-item header__navbar-user">-->
+                    <!--                        <img src="https://scontent.fhan14-4.fna.fbcdn.net/v/t1.6435-9/99073839_1158302667841247_2039625169382670336_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=SUt8JV6Nm2cAX-flRXh&_nc_ht=scontent.fhan14-4.fna&oh=00_AfDfgLzy4pg2IjZ8Nn6GJZrudufkTmJHmBLqnwYBvwaygQ&oe=6448D64C" alt="" class="header__navbar-user-img">-->
+                    <!--                        <span class="header__navbar-user-name">Quang Tèo</span>-->
+
+                    <!--                        <ul class="header__navbar-user-menu">-->
+                    <!--                            <li class="header__navbar-user-item">-->
+                    <!--                                <a href="">Tài khoản của tôi</a>-->
+                    <!--                            </li>-->
+                    <!--                            <li class="header__navbar-user-item">-->
+                    <!--                                <a href="">Địa chỉ của tôi</a>-->
+                    <!--                            </li>-->
+                    <!--                            <li class="header__navbar-user-item">-->
+                    <!--                                <a href="">Đơn mua</a>-->
+                    <!--                            </li>-->
+                    <!--                            <li class="header__navbar-user-item header__navbar-user-item&#45;&#45;separate">-->
+                    <!--                                <a href="">Đăng xuất</a>-->
+                    <!--                            </li>-->
+                    <!--                        </ul>-->
+                    <!--                    </li>-->
+                </ul>
+            </nav>
+            <!-- header with search -->
+
+            <div class="header-with-search">
+                <a href="/" class="header__logo-link">
+                    <div class="header__logo">
+                        <img class="header__logo-img"
+                             src="https://storage.googleapis.com/ops-shopee-files-live/live/affiliate-blog/2019/05/logo-full-white.png">
+                    </div>
+                </a>
+                <div class="header__search">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+
+                        <!--Search history-->
+                        <div class="header__search-history">
+                            <h3 class="header__search-history-heading">Lịch sử tìm kiếm </h3>
+                            <ul class="header__search-history-list">
+                                <li class="header__search-history-list-item">
+                                    <a href="">Kem dưỡng da</a>
+                                </li>
+                                <li class="header__search-history-list-item">
+                                    <a href="">Nước hoa</a>
+                                </li>
+                                <li class="header__search-history-list-item">
+                                    <a href="">Dầu gội</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header__search-select">
+                        <span class="header__search-select-label">Trong shop</span>
+                        <i class="header__search-select-icon fa-sharp fa-solid fa-chevron-down"></i>
+
+                        <ul class="header__search-option">
+                            <li class="header__search-option-item header__search-option-item--active">
+                                <span>Trong shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li class="header__search-option-item">
+                                <span>Ngoài shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-btn">
+                        <i class=" header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+                <!--Cart layout-->
+                <div class="header__cart">
+                    <div class="header__cart-wrap">
+                        <i class="header__cart-icon fa-sharp fa-solid fa-cart-shopping"></i>
+                        <!-- No cart: header__cart-list-no--cart -->
+
+                        <span class="header__cart-notice">3</span>
+                        <div class="header__cart-list ">
+                            <img src="https://drive.gianhangvn.com/image/empty-cart.jpg" alt=""
+                                 class="header__cart-no-cart-img">
+                            <span class="header__cart-list-no-cart-msg">
+                            Chưa có sản phẩm
+                            </span>
+
+                            <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                            <ul class="header__cart-list-item">
+                                <li class="header__cart-item">
+                                    <img src="https://i.pinimg.com/originals/69/be/42/69be42ec49e02993974b1043e1ece8b2.jpg"
+                                         alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tiền điện tử Bitcoin</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">3000$</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">2</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-delete">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="header__cart-item">
+                                    <img src="https://nairametrics.com/wp-content/uploads/2020/09/bitcoin-wallpaper-1-e1601389702162.jpg?w=900&h=570&crop=1"
+                                         alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tiền điện tử Bitcoin</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">9000$</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">1</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-delete">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                                <li class="header__cart-item">
+                                    <img src="https://previews.123rf.com/images/peshkova/peshkova1801/peshkova180100773/93277849-creative-glowing-bitcoin-wallpaper-cryptocurrency-and-trade-concept-3d-rendering.jpg"
+                                         alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                            <h5 class="header__cart-item-name">Tiền điện tử Bitcoin</h5>
+                                            <div class="header__cart-item-price-wrap">
+                                                <span class="header__cart-item-price">5000$</span>
+                                                <span class="header__cart-item-multiply">x</span>
+                                                <span class="header__cart-item-qnt">4</span>
+                                            </div>
+                                        </div>
+                                        <div class="header__cart-item-body">
+                                            <span class="header__cart-item-description">
+                                                Phân loại: Bạc
+                                            </span>
+                                            <span class="header__cart-item-delete">Xóa</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="header__cart-view-cart btn btn--primary">Xem giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="app__container">
+        <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__colum-2">
+                    <nav class="category">
+                        <h3 class="category__heading">Danh mục</h3>
+                        <ul class="category-list">
+                            <li class="category-item category-item--active">
+                                <a href="" class="category-item__link">Nước hoa</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Mỹ phẩm</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Trang sức</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Đồ chơi</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Phụ kiện</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Đồ ăn</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Hộp bút</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Gấu bông</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Điện thoại</a>
+                            </li>
+                            <li class="category-item">
+                                <a href="" class="category-item__link">Tivi</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="grid__colum-10">
+                    <div class="home-filter">
+                        <span class="home-filter__label">Sắp xếp theo</span>
+                        <button class="home-filter__btn btn">Phổ biến</button>
+                        <button class="home-filter__btn  btn btn--primary">Mới nhất</button>
+                        <button class="home-filter__btn btn">Bán chạy</button>
+
+                        <div class="select-input">
+                            <span class="select-input-price">Giá</span>
+                            <i class="select-input__icon fa-solid fa-chevron-down"></i>
+
+                            <!--List options-->
+                            <ul class="select-input__list">
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Thấp đến cao</a>
+                                </li>
+                                <li class="select-input__item">
+                                    <a href="" class="select-input__link">Giá: Cao đến Thấp</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="home-filter__page">
+                            <span class="home-filter__page-num">
+                                <span class="home-filter__page-current">1</span>/14
+                            </span>
+
+                            <div class="home-filter__page-control">
+                                <a href="" class="home-filter__page-btn home-filter__page-btn--disabled">
+                                    <i class="home-filter__page-icon  fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="" class=" home-filter__page-btn">
+                                    <i class="home-filter__page-icon fa-solid fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-product">
+                        <div class="grid__row">
+                            <!--Product item-->
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://product.hstatic.net/200000117693/product/narciso_rodriguez_narciso_eau_de_parfum_poudree__30_ml__578b014cd0914ca0a92b111f5cecde02_medium.jpg);"></div>
+                                    <h4 class="home-product-item__name">Delicate Cherry Blossom Eau de Toilette ddDE
+                                        DFDX VGHGD ADADE DAF</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3400$</span>
+                                        <span class="home-product-item__price-current">9999$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Nhật bản</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">10%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(data:image/jpeg;base64,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);"></div>
+                                    <h4 class="home-product-item__name">So Fever Together Him Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">6400$</span>
+                                        <span class="home-product-item__price-current">8799$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Pháp</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">40%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyRHqLhnj3BU_YVqZiJkBmpm9lg0emErgF0H3s6ZdCmfDcgNz_oX6gW0LSENMKsk4N4vk&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Be Happy Feel Good Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">4500$</span>
+                                        <span class="home-product-item__price-current">6666$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Lào</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">12%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKfkI4CY-s5v7S4niOJJdJLNT-1ndGbleB5Q&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Mister Giordani Aqua Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">5400$</span>
+                                        <span class="home-product-item__price-current">7999$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Nhật bản</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">10%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRog1kVEtXAsu1-BzpgYvGHuH2HJaT9Y1FV0g&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Turquoise Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3800$</span>
+                                        <span class="home-product-item__price-current">4324$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Nhật bản</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">32%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifCtAGK1PbCJ85lN0_Vmlhjet96RUiqhd8w&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Delicate Cherry Blossom Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">33400$</span>
+                                        <span class="home-product-item__price-current">99999$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Viêt nam</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">30%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2fN2d_wXaVu2XKnnmgP9a9i7S_3Zxj619A&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Eau de Parfum</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3200$</span>
+                                        <span class="home-product-item__price-current">5333$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Nhật bản</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">45%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi9MTBbon63S-mHDISBtRB99Pu-OoVuB7ifg&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Together Her Eau de Parfum</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">6500$</span>
+                                        <span class="home-product-item__price-current">7223$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Hàn quốc</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">32%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgo2l8uIEGDQqZgdGGXZu5ovKOyfntBYZc4g&usqp=CAU);"></div>
+                                    <h4 class="home-product-item__name">Femme Eau de Toilette</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">5500$</span>
+                                        <span class="home-product-item__price-current">7853$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">China</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">50%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="grid__column-2-4">
+                                <a class="home-product-item" href="#">
+                                    <div class="home-product-item__img"
+                                         style="background-image:url(https://kenperfume.com/wp-content/uploads/2022/09/Nuoc-Hoa-Nam-Unisex-Al-Haramain-Amber-Oud-Ruby-Edition-300x338.jpg.webp);"></div>
+                                    <h4 class="home-product-item__name">Delicate Cherry Blossom </h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">7400$</span>
+                                        <span class="home-product-item__price-current">9439$</span>
+                                    </div>
+                                    <div class="home-product-item__action">
+                                            <span class="home-product-item__like">
+                                                <i class="home-product-item__like-icon-empty fa-solid fa-heart"></i>
+                                                <i class="home-product-item__like-icon-fill fa-regular fa-heart"></i>
+                                            </span>
+                                        <div class="home-product-item__rating">
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="home-product-item__star--gold fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="home-product-item_origin">
+                                        <span class="home-product-item__brand">Whoo</span>
+                                        <span class="home-product-item_origin-name">Mỹ</span>
+                                    </div>
+                                    <div class="home-product-item__favourite">
+                                        <i class="fa-solid fa-check"></i>
+                                        <span>Yêu thích</span>
+
+                                    </div>
+                                    <div class="home-product-item_sale-off">
+                                        <span class="home-product-item_sale-off-percent">34%</span>
+                                        <span class="home-product-item_sale-off-label"> Giảm</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <ul class="pagination home-product__pagination">
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-left"></i>
+                            </a>
+                        </li>
+
+                        <li class="pagination-item pagination-item--active">
+                            <a href="" class="pagination-item__link">1</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">2</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">3</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">4</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">5</a>
+                        </li>
+
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">14</a>
+                        </li>
+                        <li class="pagination-item">
+                            <a href="" class="pagination-item__link">
+                                <i class="pagination-item__icon fas fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <footer class="footer">
+        <div class="grid">
+            <div class="grid__row">
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Trung tâm trợ giúp</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Shoppe Mall</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Giới thiệu</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Giới thiệu</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Tuyển dụng</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Điều khoản</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Danh mục</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Mỹ phẩm</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Nước Hoa</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Thời trang</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">Đồ dùng học tập</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Theo dõi</h3>
+                    <ul class="footer-list">
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fa-brands fa-facebook"></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fa-brands fa-instagram"></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="" class="footer-item__link">
+                                <i class="footer-item__icon fa-brands fa-linkedin"></i>
+                                Linkedin
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid__column-2-4">
+                    <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
+                    <div class="footer__download">
+                        <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/d91264e165ed6facc6178994d5afae79.png" alt="" class="footer__download-qr">
+                        <div class="footer__download-apps">
+                            <a href="" class="footer__download-app-link">
+                                <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/39f189e19764dab688d3850742f13718.png" alt="" class="footer__download-apps-img">
+                            </a>
+                            <a href="" class="footer__download-app-link">
+                            <img src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f4f5426ce757aea491dce94201560583.png" alt="" class="footer__download-apps-img">
+                            </a>
+                            <a href="" class="footer__download-app-link">
+                                <img src="https://down-vn.img.susercontent.com/file/35352374f39bdd03b25e7b83542b2cb0" alt="" class="footer__download-apps-img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="grid">
+                <p class="footer__text">© 2015 - Bản quyền thuộc về Công ty TNHH Shopee</p>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--Modal layout -->
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
+
+
